@@ -16,7 +16,7 @@
 <nav>
   <a href="index.html">🏠 Accueil</a>
   <a href="projets.html">🧮 Projets</a>
-  <a href="codes.html">💻 Scripts </a>
+  <a href="codes.html" class="active">💻Scripts & Automatisations </a>
   <a href="publications.html">📄 Publications</a>
 </nav>
 
@@ -25,34 +25,44 @@
   <p>Cette section regroupe quelques scripts développés pour faciliter la préparation, le calcul et l’analyse de simulations numériques avec OpenFOAM, Code_Aster et ParaView.</p>
 
   <div class="code-grid">
+  
+    <!-- Script 1 -->
+    <div class="code-block-group">
+      <h4>📁 openfoam_param.py</h4>
+      <p>Copie un cas de base dans un dossier de résultats</p>
 
-     <!-- Script 1 -->
-    <!-- <div class="code-block-group"> -->
-      <!-- <h4>📁 génération_maillage_paramétrique.py</h4> -->
-      <!-- <p>Script Python pour générer automatiquement un maillage paramétrique 2D/3D à partir de dimensions variables et exporter au format Salomé (.hdf) ou OpenFOAM (.stl).</p> -->
-      <!-- <div class="button-row"> -->
-        <!-- <a href="generation_maillage_parametrique.py" download class="code-download">⬇️ Télécharger</a> -->
-      <!-- </div> -->
-    <!-- </div> -->
+	  <p>Modifie les paramètres (ici vitesse U)</p>
 
+	  <p>Génère le maillage si nécessaire</p>
 
+      <p>Lance la simulation</p>
+
+      <p>Gère les dossiers existants automatiquement.</p>
+		  <div class="button-row">
+			<a href="openfoam_param.py" download class="code-download">⬇️ Télécharger</a>
+		  </div>
+    </div>
+
+	
     <!-- Script 2 -->
-    <!-- <div class="code-block-group"> -->
-      <!-- <h4>📁 post_traitement_openfoam.py</h4> -->
-      <!-- <p>Extraction automatique de champs (pression, vitesse, température) depuis des cas OpenFOAM et génération de courbes et animations sous Matplotlib et ParaView.</p> -->
-      <!-- <div class="button-row"> -->
-        <!-- <a href="post_traitement_openfoam.py" download class="code-download">⬇️ Télécharger</a> -->
-      <!-- </div> -->
-    <!-- </div> -->
+    <div class="code-block-group">
+      <h4>📁 mesh_convergence.py</h4>
+      <p>
+			Automatisation complète des études CFD : génération de cas paramétrés et exécution de solveurs.	  
+	  </p>
 
-    <!-- Script 3 --> 
-    <!-- <div class="code-block-group"> -->
-      <!-- <h4>📁 lancement_code_aster.py</h4> -->
-      <!-- <p>Automatisation de l’exécution de cas Code_Aster via Python : définition du fichier .comm, lancement du calcul, récupération du .mess et extraction des résultats clefs.</p> -->
-      <!-- <div class="button-row"> -->
-        <!-- <a href="lancement_code_aster.py" download class="code-download">⬇️ Télécharger</a> -->
-      <!-- </div> -->
-    <!-- </div> -->
+      <p> 
+		Analyse automatique des champs : extraction du maximum de la vitesse et génération de CSV.
+	  </p>
+
+      <p>
+		Compatible tous solveurs OpenFOAM : icoFoam, simpleFoam, pimpleFoam, etc.
+	  </p>
+		  <div class="button-row">
+			<a href="mesh_convergence.py" download class="code-download">⬇️ Télécharger</a>
+		  </div>
+    </div>
+	
   </div>
 </div>
 
@@ -64,5 +74,3 @@
 
 </body>
 </html>
-
-
