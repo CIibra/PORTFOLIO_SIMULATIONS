@@ -261,5 +261,93 @@ footer {
   }
 }
 
+/* --- Mise en page globale --- */
+.main-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    border-left: 5px solid #004a7c;
+    padding-left: 15px;
+    margin-bottom: 25px;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+/* --- Grille et Cartes --- */
+.code-section {
+    margin-bottom: 50px;
+}
+
+.code-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.code-card {
+    background: #ffffff;
+    border: 1px solid #e1e8ed;
+    border-radius: 12px;
+    padding: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.code-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+.code-card h4 {
+    margin-top: 0;
+    color: #004a7c;
+    font-family: 'Courier New', Courier, monospace; /* Style code */
+}
+
+.code-card p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.4;
+}
+
+/* --- Boutons --- */
+.download-btn {
+    display: inline-block;
+    text-align: center;
+    background-color: #f4f7f9;
+    color: #004a7c;
+    padding: 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    border: 1px solid #004a7c;
+    transition: 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #004a7c;
+    color: white;
+}
+
+.btn-group {
+    display: flex;
+    gap: 10px;
+}
+
+.mini {
+    flex: 1;
+}
+
+/* Couleurs de bordure par catégorie pour le rappel visuel */
+.fluides .code-card { border-top: 4px solid #3498db; }
+.solides .code-card { border-top: 4px solid #e67e22; }
+.data .code-card { border-top: 4px solid #2ecc71; }
+
 
 
