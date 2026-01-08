@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Analyse de données médicales par Machine Learning</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>CISSE Ibrahim – Data analyst - IA & Automatisations</h1>
+  <p>Spécialiste Data - IA & automatisations, je conçois des outils pratiques et pédagogiques qui simplifient la gestion et la prise de décision.</p>
+</header>
+
+<nav>
+  <a href="index.html">🏠 Accueil</a>
+  <a href="projets.html" class="active">📊 Projets</a>
+  <a href="codes.html">📂 Codes Sources</a>
+  <a href="publications.html">📄 Publications</a>
+</nav>
+  
+<style>
+  .proj-wrap {max-width: 1000px; margin: 0 auto; padding: 24px;}
+  .proj-section {margin-bottom: 28px; border: 1px solid #e5e7eb; border-radius: 12px; padding: 18px; background: #ffffff;}
+  .proj-section h2 {margin: 0 0 10px; font-size: 22px; color: #111827;}
+  .proj-section h3 {margin: 16px 0 8px; font-size: 18px; color: #111827;}
+  .proj-section p {margin: 8px 0; color: #374151; line-height: 1.55;}
+  .proj-muted {color: #6b7280; font-size: 14px;}
+  .proj-grid-2 {display: grid; grid-template-columns: 1fr 1fr; gap: 16px;}
+  .proj-list {margin: 8px 0 0 18px;}
+  .proj-list li {margin: 6px 0;}
+  .proj-list li b {color: #111827;}
+  .proj-img {border: 1px solid #e5e7eb; border-radius: 10px; width: 100%; height: auto; background: #f9fafb;}
+  .proj-caption {margin-top: 6px; font-size: 12px; color: #6b7280;}
+  @media (max-width: 720px) { .proj-grid-2 {grid-template-columns: 1fr;} }
+</style>
+
+<div class="proj-wrap">
+
+  <section class="proj-section">
+    <h2>Analyse de données médicales par Machine Learning</h2>
+    <p>
+      Ce projet illustre l’application du <b>Machine Learning</b> à des données médicales réelles. 
+      L’objectif est de classifier des radiographies thoraciques (<b>Chest X‑ray</b>) en deux classes : 
+      <span style="color:blue;">NORMAL</span> et <span style="color:blue;">PNEUMONIA</span>. 
+      Le travail couvre la préparation des données, l’entraînement d’un modèle <b>ResNet18</b>, 
+      l’évaluation des performances et la mise en place d’une interface interactive pour tester les prédictions.
+    </p>
+  </section>
+
+  <section class="proj-section">
+    <h2>Données et méthode</h2>
+    <div class="proj-grid-2">
+      <div>
+        <h3>Sources et préparation</h3>
+        <ul class="proj-list">
+          <li><b>Dataset :</b> radiographies thoraciques publiques (Chest X‑ray Pneumonia).</li>
+          <li><b>Organisation :</b> dossiers <code>train</code>, <code>val</code>, <code>test</code> avec classes <b>NORMAL</b> et <b>PNEUMONIA</b>.</li>
+          <li><b>Prétraitement :</b> redimensionnement (224×224), normalisation, conversion en tenseurs.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Approche analytique</h3>
+        <ul class="proj-list">
+          <li><b>Modèle :</b> réseau <b>ResNet18</b> pré‑entraîné, adapté pour classification binaire.</li>
+          <li><b>Entraînement :</b> optimiseur <b>Adam</b>, fonction de perte <b>CrossEntropy</b>.</li>
+          <li><b>Évaluation :</b> accuracy sur validation et test, matrice de confusion.</li>
+        </ul>
+      </div>
+    </div>
+    <p class="proj-muted">Outils : Python (PyTorch, Torchvision), Dash pour l’interface interactive.</p>
+  </section>
+
+  <section class="proj-section">
+    <h2>Résultats et visualisations</h2>
+    <p>
+      Le modèle atteint une bonne capacité de distinction entre les deux classes. 
+      L’interface permet de sélectionner une image et d’obtenir une prédiction instantanée avec les probabilités associées. 
+      Une matrice de confusion illustre la performance globale sur un échantillon.
+    </p>
+    <div class="proj-grid-2">
+      <div>
+        <img class="proj-img" src="medi_1.png" alt="Exemple de radiographie">
+        <div class="proj-caption">Exemple de radiographie analysée.</div>
+      </div>
+      <div>
+        <img class="proj-img" src="medi_2.png" alt="Matrice de confusion">
+        <div class="proj-caption">Matrice de confusion sur un échantillon test.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="proj-section">
+    <h2>Utilité</h2>
+    <p>
+      Ce projet démontre un <b>pipeline complet</b> de Machine Learning appliqué à des données médicales : 
+      de la préparation des données brutes jusqu’à la mise en place d’une interface interactive. 
+      Il constitue une base reproductible pour des projets similaires, qu’ils soient orientés santé ou industrie, 
+      et illustre la valeur ajoutée des outils <b>IA</b> pour l’analyse et la prise de décision.
+    </p>
+  </section>
+
+</div>
+
+<footer>
+  <p>📧 <a class="email-link" href="mailto:ibrahim.cisse@ensam.eu">ibrahim.cisse@ensam.eu</a> 📱 +33 7 65 62 16 11 </p>
+</footer>
+
+</body>
+</html>
