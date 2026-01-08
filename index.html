@@ -17,46 +17,63 @@
 </header>
 
 <nav>
- <a href="index.html" class="active">🏠 Accueil</a>
- <a href="projets.html">⚙️ Simulations</a>
- <a href="codes.html">📂 Codes Sources</a>
- <a href="publications.html">📄 Publications</a>
+  <a href="index.html" class="active">🏠 Accueil</a>
+  
+  <div class="dropdown">
+    <button class="dropbtn">⚙️ Projets ▼</button>
+    <div class="dropdown-content">
+      <a href="projets-fluides.html">🌊 Fluides (CFD)</a>
+      <a href="projets-solides.html">🏗️ Solides (CSM)</a>
+      <a href="projets-data.html">📊 Data & IA</a>
+    </div>
+  </div>
+
+  <a href="codes.html">📂 Codes Sources</a>
+  <a href="publications.html">📄 Publications</a>
 </nav>
 
 <div class="section">
    <h2>🏠 Bienvenue</h2>
    <p>
-     Bienvenue sur mon portfolio. Mon expertise se situe à l'intersection de la **Mécanique des Fluides/Solides** et de l'**Analyse de Données**. 
-     Je ne me contente pas de simuler : j'exploite les données massives pour extraire des tendances, valider des modèles et optimiser les performances.
-   </p>
-   <p>
-    Mon approche : allier la simulation haute performance (HPC) et les outils modernes de la Data Science (Python, ML, Visualisation) 
-    pour offrir une vision prédictive et fiable des systèmes complexes.
+     Mon expertise se situe à l'intersection de la <strong>Mécanique Numérique</strong> et de la <strong>Data Science</strong>. 
+     Je traduis des problématiques physiques complexes en modèles numériques prédictifs tout en exploitant les données massives pour optimiser la performance industrielle.
    </p>
 </div>
 
 <div class="section">
- <h2>🛠️ Compétences Hybrides (Ingénierie & Data)</h2>
- <p>Maîtrise des outils de simulation et des méthodes d'analyse statistique :</p>
+ <h2>🛠️ Compétences Hybrides</h2>
  <ul>
-  <li><strong>Simulation Numérique (CFD & CSM)</strong> : Expertise ANSYS (Fluent, Mechanical), Abaqus et OpenFOAM. Modélisation de la turbulence, thermique et fatigue structurelle.</li>
-  <li><strong>Data Analysis & Statistiques</strong> : Analyse exploratoire de données (EDA), traitement de signaux, statistiques descriptives et inférentielles pour la validation de modèles.</li>
-  <li><strong>Machine Learning Junior</strong> : Introduction à l'apprentissage supervisé (Régression, Classification) pour la création de modèles réduits (Surrogate Models) et l'optimisation de design.</li>
-  <li><strong>Programmation & Écosystème Data</strong> : Maîtrise avancée de **Python** (Pandas, Scikit-learn, Matplotlib, Seaborn) pour le traitement automatisé de gros datasets.</li>
-  <li><strong>Visualisation de Données</strong> : Création de tableaux de bord et de visuels percutants via ParaView pour la 3D et outils Python pour les indicateurs de performance (KPIs).</li>
+  <li><strong>Simulation Numérique (CFD & CSM)</strong> : Expertise ANSYS (Fluent, Mechanical), Abaqus et OpenFOAM.</li>
+  <li><strong>Data Science & Statistiques</strong> : Machine Learning (Scikit-learn), Analyse exploratoire (Pandas) et modèles réduits.</li>
+  <li><strong>Programmation</strong> : Python (Calcul scientifique), C++, SQL et automatisation de workflows.</li>
  </ul>
 </div>
 
 <div class="section">
- <h2>🚀 Livrables & Expertise Data-Driven</h2>
- <p>Ce que j'apporte à vos projets en combinant ingénierie et analyse de données :</p>
- <ul>
-  <li><strong>Modèles Prédictifs & Simulations</strong> : Conception de jumeaux numériques et validation rigoureuse par comparaison données/modèles.</li>
-  <li><strong>Analyse de Sensibilité & Optimisation</strong> : Identification des paramètres critiques via des plans d'expériences numériques (DoE).</li>
-  <li><strong>Pipelines de Données Automatisées</strong> : Scripts de nettoyage et de structuration de données brutes issues de capteurs ou de solveurs.</li>
-  <li><strong>Reporting Décisionnel</strong> : Synthèses graphiques et rapports techniques transformant des gigaoctets de calculs en recommandations claires.</li>
-  <li><strong>Développement d'Outils Métiers</strong> : Création de mini-outils d'analyse ou de plugins personnalisés (UDF, scripts Python) pour accélérer le post-traitement.</li>
- </ul>
+ <h2>🚀 Livrables & Expertise Mixte</h2>
+ <p>Une double approche pour une vision complète de vos systèmes :</p>
+ 
+ <div class="grid-container" style="display: flex; flex-wrap: wrap; gap: 20px;">
+   
+   <div style="flex: 1; min-width: 300px; background: #f9f9f9; padding: 15px; border-radius: 8px;">
+     <h3>🔹 Simulation (CFD/CSM)</h3>
+     <ul>
+      <li><strong>Modèles Numériques Validés :</strong> Paramétrage complet de solveurs et maillages optimisés.</li>
+      <li><strong>Études de Dimensionnement :</strong> Rapports d'analyse mécanique, thermique et fluidique.</li>
+      <li><strong>Développement Spécifique :</strong> Création d'UDF et de sous-routines personnalisées (C++).</li>
+     </ul>
+   </div>
+
+   <div style="flex: 1; min-width: 300px; background: #f9f9f9; padding: 15px; border-radius: 8px;">
+     <h3>🔹 Data & Automatisation</h3>
+     <ul>
+      <li><strong>Modèles Réduits (ROM) :</strong> Accélération des prédictions via le Machine Learning.</li>
+      <li><strong>Automatisation :</strong> Pipelines Python pour l'enchaînement Maillage-Calcul-Post-traitement.</li>
+      <li><strong>Dashboards :</strong> Visualisation interactive des données de simulation massives.</li>
+     </ul>
+   </div>
+
+ </div>
 </div>
 
 <footer>
