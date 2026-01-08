@@ -57,24 +57,45 @@ footer {
 
 /* Navigation */
 /* --- Navigation & Dropdown --- */
-nav {
-    background-color: #333;
-    padding: 10px;
+/* Barre de navigation centrée */
+.navbar {
+    display: flex;
+    justify-content: center; /* Centre les éléments horizontalement */
+    align-items: center;
+    background-color: #f4f7f9; /* Couleur de fond gris clair selon ton image */
+    padding: 15px 0;
+    gap: 40px; /* Espace généreux entre les boutons */
+}
+
+/* Style commun pour les liens et le bouton de dropdown */
+.nav-item, .dropbtn {
+    color: #004a7c; /* Bleu foncé pro selon ton image */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px; /* Bords arrondis comme sur ton bouton "Accueil" */
+    transition: background-color 0.3s ease;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px;
     display: flex;
     align-items: center;
 }
 
-nav a, .dropbtn {
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    font-size: 16px;
-    border: none;
-    background: none;
-    cursor: pointer;
-    font-family: inherit;
+/* Effet au survol (Hover) uniquement */
+.nav-item:hover, .dropdown:hover .dropbtn {
+    background-color: #d0dbe5; /* Gris-bleu léger au survol */
 }
 
+/* Suppression de la surbrillance après clic (Focus) */
+.nav-item:focus, .dropbtn:focus {
+    outline: none;
+    background-color: transparent; 
+}
+
+/* --- Gestion du Dropdown --- */
 .dropdown {
     position: relative;
     display: inline-block;
@@ -83,18 +104,21 @@ nav a, .dropbtn {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #ffffff;
-    min-width: 180px;
-    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-    z-index: 100;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+    z-index: 1000;
     border-radius: 4px;
+    margin-top: 5px;
 }
 
 .dropdown-content a {
-    color: #333 !important;
+    color: #333;
     padding: 12px 16px;
+    text-decoration: none;
     display: block;
     text-align: left;
+    font-weight: normal;
 }
 
 .dropdown-content a:hover {
@@ -103,14 +127,6 @@ nav a, .dropbtn {
 
 .dropdown:hover .dropdown-content {
     display: block;
-}
-
-.dropdown:hover .dropbtn {
-    background-color: #444;
-}
-nav a:hover,
-nav a.active {
-  background-color: #b0c4d1;
 }
 
 /* Email */
@@ -244,5 +260,6 @@ nav a.active {
     max-width: 90%;
   }
 }
+
 
 
