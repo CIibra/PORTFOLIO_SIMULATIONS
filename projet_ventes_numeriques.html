@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Analyse de performance commerciale (Secteur numérique)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>CISSE Ibrahim – Data Analyst Junior</h1>
+  <p>Spécialiste de la transformation des données brutes en informations utiles pour la prise de décision</p>
+</header>
+
+<nav>
+  <a href="index.html">🏠 Accueil</a>
+  <a href="projets.html" class="active">📊 Projets</a>
+  <a href="codes.html">📂 Codes Sources</a>
+  <a href="publications.html">📄 Publications</a>
+</nav>
+  
+<style>
+  /* Mise en forme sobre et lisible pour le contenu du projet */
+  .proj-wrap {max-width: 1000px; margin: 0 auto; padding: 24px;}
+  .proj-section {margin-bottom: 28px; border: 1px solid #e5e7eb; border-radius: 12px; padding: 18px; background: #ffffff;}
+  .proj-section h2 {margin: 0 0 10px; font-size: 22px; color: #111827;}
+  .proj-section h3 {margin: 16px 0 8px; font-size: 18px; color: #111827;}
+  .proj-section p {margin: 8px 0; color: #374151; line-height: 1.55;}
+  .proj-muted {color: #6b7280; font-size: 14px;}
+  .proj-grid-2 {display: grid; grid-template-columns: 1fr 1fr; gap: 16px;}
+  .proj-grid-3 {display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px;}
+  .proj-kpi {display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px;}
+  .proj-badge {display: inline-block; padding: 6px 10px; border-radius: 999px; background: #eef2ff; color: #1f2937; font-size: 12px; border: 1px solid #e0e7ff;}
+  .proj-list {margin: 8px 0 0 18px;}
+  .proj-list li {margin: 6px 0;}
+  .proj-list li b {color: #111827;}
+  .proj-img {border: 1px solid #e5e7eb; border-radius: 10px; width: 100%; height: auto; background: #f9fafb;}
+  .proj-caption {margin-top: 6px; font-size: 12px; color: #6b7280;}
+  .proj-table {width: 100%; border-collapse: collapse; margin-top: 8px;}
+  .proj-table th, .proj-table td {border: 1px solid #e5e7eb; padding: 8px 10px; text-align: left; font-size: 14px;}
+  .proj-table th {background: #f3f4f6; color: #111827;}
+  .proj-note {margin-top: 8px; padding: 10px; border-left: 3px solid #93c5fd; background: #f0f9ff; color: #0f172a; font-size: 14px; border-radius: 6px;}
+  @media (max-width: 720px) { .proj-grid-2, .proj-grid-3 {grid-template-columns: 1fr;} }
+</style>
+
+<div class="proj-wrap">
+
+  <section class="proj-section">
+    <h2>Projet d’analyse des ventes numériques</h2>
+    <p>
+      Ce projet couvre l’analyse de performance commerciale pour des produits numériques (ordinateurs, smartphones, tablettes, accessoires),
+      depuis la préparation des données jusqu’au rapport final. Il met en évidence les tendances clés par région, produit, équipe et période,
+      puis propose un benchmark interne et des recommandations actionnables pour le pilotage.
+    </p>
+    <div class="proj-kpi">
+      <span class="proj-badge">Dataset nettoyé</span>
+      <span class="proj-badge">Descriptif complet</span>
+      <span class="proj-badge">Benchmark interne</span>
+      <span class="proj-badge">Rapport PDF Insights</span>
+    </div>
+  </section>
+
+  <section class="proj-section">
+    <h2>Données et méthode</h2>
+    <div class="proj-grid-2">
+      <div>
+        <h3>Sources et variables</h3>
+        <ul class="proj-list">
+          <li><b>Colonnes clés :</b> Date, Région, Équipe, Produit, Catégorie, Prix unitaire, Quantité vendue, Chiffre d’affaires, Marge</li>
+          <li><b>Périmètre :</b> ventes multi-régions et multi-équipes sur une période courte (jour par jour)</li>
+          <li><b>Nettoyage :</b> typage des dates, contrôle des champs numériques, normalisation des libellés</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Approche analytique</h3>
+        <ul class="proj-list">
+          <li><b>Descriptif :</b> agrégations par région, produit, équipe et jour</li>
+          <li><b>Temporel :</b> évolution du CA, moyenne mobile (3 jours), pics/creux</li>
+          <li><b>Benchmark :</b> heatmap équipe × région, parts par catégorie, ratios marge/CA</li>
+        </ul>
+      </div>
+    </div>
+    <p class="proj-muted">Outils : Python (Pandas, Matplotlib, Seaborn), génération d’images PNG pour le rapport et le portfolio.</p>
+  </section>
+
+  <section class="proj-section">
+    <h2>Statistiques descriptives</h2>
+
+    <h3>Vue globale</h3>
+    <ul class="proj-list">
+      <li><b>CA total :</b> somme du chiffre d’affaires (EUR)</li>
+      <li><b>Marge totale :</b> somme de la marge (EUR)</li>
+      <li><b>Prix unitaire moyen :</b> moyenne des prix</li>
+      <li><b>Quantité moyenne vendue :</b> moyenne des quantités</li>
+    </ul>
+    <img class="proj-img" src="ca_global.png" alt="Chiffre d'affaires et marge globales">
+    <div class="proj-caption">Comparaison du CA total et de la marge totale.</div>
+
+    <div class="proj-grid-2" style="margin-top: 16px;">
+      <div>
+        <h3>Par région</h3>
+        <p>Répartition du CA par zone géographique pour identifier les locomotives et les zones à renforcer.</p>
+        <img class="proj-img" src="ca_par_region.png" alt="Chiffre d'affaires par région">
+        <div class="proj-caption">CA par région (bar chart).</div>
+      </div>
+      <div>
+        <h3>Par équipe</h3>
+        <p>Benchmark interne simple des performances commerciales entre équipes.</p>
+        <img class="proj-img" src="ca_par_equipe.png" alt="Chiffre d'affaires par équipe">
+        <div class="proj-caption">CA par équipe (bar chart).</div>
+      </div>
+    </div>
+
+    <h3 style="margin-top: 16px;">Par produit</h3>
+    <p>Identification des best-sellers (CA/volume) et des produits premium (prix/marge).</p>
+    <img class="proj-img" src="ca_par_produit.png" alt="Chiffre d'affaires par produit">
+    <div class="proj-caption">CA par produit (bar chart horizontal).</div>
+
+    <h3 style="margin-top: 16px;">Temporel (jour par jour)</h3>
+    <p>Lecture de l’évolution du CA, détection de pics et creux, et tendance via moyenne mobile.</p>
+    <div class="proj-grid-2">
+      <div>
+        <img class="proj-img" src="evolution_ca.png" alt="Évolution du CA par jour">
+        <div class="proj-caption">Évolution quotidienne du CA (marqueurs sur les jours).</div>
+      </div>
+      <div>
+        <img class="proj-img" src="evolution_ca_ma3.png" alt="CA et moyenne mobile 3 jours">
+        <div class="proj-caption">CA vs. moyenne mobile (3 jours) pour lisser la tendance.</div>
+      </div>
+    </div>
+    <img class="proj-img" src="ca_par_jour_semaine.png" alt="CA moyen par jour de la semaine" style="margin-top: 12px;">
+    <div class="proj-caption">CA moyen par jour de la semaine (analyse de pattern hebdomadaire).</div>
+    <div class="proj-note">Si vos noms de fichiers diffèrent, mettez-les à jour dans les attributs <code>src</code> des images.</div>
+  </section>
+
+  <section class="proj-section">
+    <h2>Benchmark interne</h2>
+
+    <div class="proj-grid-2">
+      <div>
+        <h3>CA et marge par équipe</h3>
+        <p>Comparaison directe des montants pour visualiser la hiérarchie interne des performances.</p>
+        <img class="proj-img" src="benchmark_ca_marge_equipe.png" alt="Benchmark CA et marge par équipe">
+        <div class="proj-caption">Barres comparatives CA vs marge (par équipe).</div>
+      </div>
+      <div>
+        <h3>Heatmap équipe × région</h3>
+        <p>Vue croisée des performances, utile pour piloter l’allocation des ressources commerciales.</p>
+        <img class="proj-img" src="heatmap_region_equipe.png" alt="Heatmap du CA par région et équipe">
+        <div class="proj-caption">Intensité du CA selon la combinaison région/équipe.</div>
+      </div>
+    </div>
+
+    <div class="proj-grid-2" style="margin-top: 16px;">
+      <div>
+        <h3>Répartition par catégorie</h3>
+        <p>Parts de marché du CA par catégorie (ordinateurs, smartphones, tablettes, accessoires).</p>
+        <img class="proj-img" src="part_categorie.png" alt="Part de CA par catégorie">
+        <div class="proj-caption">Répartition du CA par catégorie de produits.</div>
+      </div>
+      <div>
+        <h3>Ratio marge/CA par équipe</h3>
+        <p>Indicateur d’efficacité commerciale utile pour prioriser les leviers d’optimisation.</p>
+        <img class="proj-img" src="ratio_marge_equipe.png" alt="Ratio marge/CA par équipe">
+        <div class="proj-caption">Barres du ratio marge/CA (efficacité) par équipe.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="proj-section">
+    <h2>Insights et recommandations</h2>
+    <h3>Insights</h3>
+    <ul class="proj-list">
+      <li><b>Locomotives régionales :</b> certaines régions tirent le CA, d’autres nécessitent un renforcement</li>
+      <li><b>Best-sellers :</b> identification claire des produits et segments porteurs</li>
+      <li><b>Efficacité interne :</b> équipes à forte valeur vs. fort volume (axes d’optimisation différenciés)</li>
+      <li><b>Tendance temporelle :</b> pics/creux et fenêtre de performance hebdomadaire à exploiter</li>
+    </ul>
+
+    <h3>Recommandations</h3>
+    <ul class="proj-list">
+      <li><b>Couverture commerciale :</b> renforcer les zones à faible CA via ciblage et allocation d’effort</li>
+      <li><b>Portefeuille produit :</b> investir sur les best-sellers et ajuster les segments à faible marge</li>
+      <li><b>Pilotage équipes :</b> aligner objectifs et moyens en fonction des performances observées</li>
+      <li><b>Calendrier opérationnel :</b> capitaliser sur les jours/semaine les plus performants</li>
+    </ul>
+    <p class="proj-muted">Un rapport PDF synthétique peut être généré automatiquement (constats + recommandations), prêt pour diffusion.</p>
+  </section>
+
+</div>
+
+
+
+<footer>
+  <p>📧 <a class="email-link" href="mailto:ibrahim.cisse@ensam.eu">ibrahim.cisse@ensam.eu</a> 📱 +33 7 65 62 16 11</p>
+</footer>
+
+</body>
+</html>
