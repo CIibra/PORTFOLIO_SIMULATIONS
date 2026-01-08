@@ -2,23 +2,20 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Accueil – Ib, Ingénieur Simulation & Data Analyst</title>
+  <title>Codes Sources – Ib, Ingénieur Simulation & Data</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
- <h1>CISSE Ibrahim </h1>
- <h1> Ingénieur en Simulation Numérique - Data Analyst & IA </h1>
- <p>
-   Spécialiste en modélisation et simulation numérique en mécanique des fluides/ structures et thermique – en Analyse de Données, je combine la rigueur de la physique avec la puissance de la Data Science pour transformer des résultats complexes en décisions stratégiques.
- </p>
+  <h1>CISSE Ibrahim</h1>
+  <h1>Ingénieur en Simulation Numérique - Data Analyst & IA</h1>
+  <p>Scripts Python et outils d'automatisation pour la simulation multi-physique et le traitement de données.</p>
 </header>
 
 <nav class="navbar">
   <a href="index.html" class="nav-item">🏠 Accueil</a>
-  
   <div class="dropdown">
     <button class="dropbtn">⚙️ Projets ▼</button>
     <div class="dropdown-content">
@@ -27,35 +24,78 @@
       <a href="projets-data.html">📊 Data & IA</a>
     </div>
   </div>
-
   <a href="codes.html" class="nav-item">📂 Codes Sources</a>
   <a href="publications.html" class="nav-item">📄 Publications</a>
 </nav>
 
-<div class="section">
-  <h2>📄 Publications & Rapports Techniques</h2>
-  <div class="project"> 
-    <ul>
-	  <li><a href="Fondements_mecanique_fluides.pdf" target="_blank" rel="noopener noreferrer">📄 Fondements de la mécanique des fluides</a></li>
-      <li><a href="simulation_ddray_gam_by_cfd.pdf" target="_blank" rel="noopener noreferrer">📄 Simulation CFD de débits de doses de rayonnement gamma</a></li>
-      <li><a href="La_turbulence.pdf" target="_blank" rel="noopener noreferrer">📄 La turbulence : aspects généraux </a></li>
-      <li><a href="Le_RANS.pdf" target="_blank" rel="noopener noreferrer">📄 Modélisation de la turbulence : l'approche RANS </a></li>
-      <li><a href="thermique.pdf" target="_blank" rel="noopener noreferrer">📄 Les transferts thermiques </a></li>
-      <li><a href="" target="_blank" rel="noopener noreferrer">📄 Modélisation de la turbulence : l'approche LES : disponible très prochainement </a></li>
-      <!-- <li><a href="Notebook_PostTraitement.ipynb" target="_blank" rel="noopener noreferrer">📄 Post-traitement des champs CFD</a></li> -->
-	  </ul>
-  </div>
+<div class="main-container">
+
+  <section class="code-section fluides">
+    <h2 class="section-title">🌊 Mécanique des Fluides & CFD</h2>
+    <div class="code-grid">
+      <div class="code-card">
+        <h4>LBM_Poiseuille.py</h4>
+        <p>Simulation D2Q9 (Lattice Boltzmann Method) de l'écoulement de Poiseuille entre plaques planes.</p>
+        <a href="LBM_Poiseuille.py" download class="download-btn">⬇️ Télécharger</a>
+      </div>
+      <div class="code-card">
+        <h4>kelvin.py</h4>
+        <p>Modélisation de l'instabilité de Kelvin-Helmholtz pour l'étude des cisaillements de couches fluides.</p>
+        <a href="kelvin.py" download class="download-btn">⬇️ Télécharger</a>
+      </div>
+      <div class="code-card">
+        <h4>mesh_convergence.py</h4>
+        <p>Automatisation d'études de convergence de maillage pour solveurs OpenFOAM (icoFoam, simpleFoam).</p>
+        <a href="mesh_convergence.py" download class="download-btn">⬇️ Télécharger</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="code-section solides">
+    <h2 class="section-title">🏗️ Structures & Thermique</h2>
+    <div class="code-grid">
+      <div class="code-card">
+        <h4>Traction_barre_1D/2D.py</h4>
+        <p>Résolution par la méthode des éléments finis (FEM) de problèmes de traction élastique.</p>
+        <div class="btn-group">
+          <a href="Traction_barre_1D.py" download class="download-btn mini">1D</a>
+          <a href="Traction_barre_2D.py" download class="download-btn mini">2D</a>
+        </div>
+      </div>
+      <div class="code-card">
+        <h4>thermique_refroi.py</h4>
+        <p>Simulation instationnaire du refroidissement d'une plaque par conduction et convection.</p>
+        <a href="thermique_refroi.py" download class="download-btn">⬇️ Télécharger</a>
+      </div>
+      <div class="code-card">
+        <h4>thermique_multi.py</h4>
+        <p>Calcul analytique/numérique du transfert thermique stationnaire dans un mur multicouche.</p>
+        <a href="thermique_multi.py" download class="download-btn">⬇️ Télécharger</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="code-section data">
+    <h2 class="section-title">📊 Data Science & Automatisation</h2>
+    <div class="code-grid">
+      <div class="code-card">
+        <h4>openfoam_param.py</h4>
+        <p>Pipeline Python pour le lancement de simulations paramétrées (U, P) et gestion du HPC.</p>
+        <a href="openfoam_param.py" download class="download-btn">⬇️ Télécharger</a>
+      </div>
+      <div class="code-card">
+        <h4>data_extraction.py</h4>
+        <p>Script d'extraction automatique des champs physiques et conversion en formats exploitables (CSV/JSON).</p>
+        <a href="#" class="download-btn">⬇️ Télécharger</a>
+      </div>
+    </div>
+  </section>
 
 </div>
 
 <footer>
-  <p>📧 <a class="email-link" href="mailto:ibrahim.cisse@ensam.eu">ibrahim.cisse@ensam.eu</a>  
-     📱 +33 7 65 62 16 11
-  </p>
+  <p>📧 <a class="email-link" href="mailto:ibrahim.cisse@ensam.eu">ibrahim.cisse@ensam.eu</a> | 📱 +33 7 65 62 16 11</p>
 </footer>
 
 </body>
 </html>
-
-
-
