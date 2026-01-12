@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Projet Data & IA – CISSE Ibrahim</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>CISSE Ibrahim</h1>
+  <h1>Ingénieur en Simulation Numérique - Data Analyst & IA</h1>
+  <p>
+    Spécialiste en modélisation et simulation numérique en mécanique des fluides/structures et thermique.
+    Je combine la rigueur de la physique avec la puissance de la Data Science.
+  </p>
+</header>
+
+<nav class="navbar">
+  <a href="index.html" class="nav-item">🏠 Accueil</a>
+  <div class="dropdown">
+    <button class="dropbtn">⚙️ Projets ▼</button>
+    <div class="dropdown-content">
+      <a href="projets-fluides.html">🌊 Fluides (CFD)</a>
+      <a href="projets-solides.html">🏗️ Solides (CSM) & Thermique</a>
+      <a href="projets-data.html">📊 Data & IA</a>
+    </div>
+  </div>
+</nav>
+
+<main class="main-content">
+  <div class="section">
+    
+    <div class="project">
+      <h3>Prédiction des Propriétés Mécaniques par Machine Learning (PPM-ML)</h3>
+      <p>
+        <strong>Concept :</strong> Ce projet, baptisé <em>SmartComposite</em>, vise à développer un métamodèle capable de prédire instantanément le comportement mécanique (rigidité, élasticité) de matériaux hétérogènes. En utilisant des algorithmes de type Forêt Aléatoire (Random Forest), nous remplaçons les simulations par Éléments Finis (EF) coûteuses par des prédictions IA ultra-rapides.
+      </p>
+
+      <div class="gallery">
+        <img src="precision_model.png" alt="Graphique de corrélation Réel vs Prédit">
+        <img src="importance_features.png" alt="Importance des variables physiques">
+      </div>
+
+      <div style="text-align: left; margin-top: 30px;">
+        <h4>Analyse de l'Hétérogénéité</h4>
+        <p>
+          L'originalité de cette approche réside dans sa capacité à modéliser l'interaction entre les constituants d'un système complexe (ex: mélange fibres/matrice). Le modèle apprend la physique du mélange pour généraliser les lois de comportement à n'importe quel nouveau couple de matériaux.
+        </p>
+        
+        <ul style="line-height: 1.8;">
+          <li><strong>Vitesse :</strong> Passage de plusieurs minutes de calcul à une réponse en millisecondes.</li>
+          <li><strong>Précision :</strong> Capture des corrélations non-linéaires entre la microstructure et la performance macroscopique.</li>
+          <li><strong>Optimisation :</strong> Exploration massive de scénarios pour réduire le poids des structures.</li>
+        </ul>
+      </div>
+
+     
+    </div>
+
+  </div>
+</main>
+
+  <footer>
+    <p>📧 <a class="email-link" href="mailto:ibrahim.cisse@ensam.eu">ibrahim.cisse@ensam.eu</a>  
+       📱 +33 7 65 62 16 11 
+    </p>
+  </footer>
+
+</body>
+</html>
