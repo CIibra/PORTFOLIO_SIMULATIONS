@@ -170,6 +170,23 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   z-index: -1;
 }
 
+.hero-fluides::before { background: linear-gradient(180deg, rgba(47,111,145,0.16) 0%, rgba(47,111,145,0) 100%); }
+.hero-solides::before { background: linear-gradient(180deg, rgba(181,98,47,0.16) 0%, rgba(181,98,47,0) 100%); }
+.hero-data::before { background: linear-gradient(180deg, rgba(74,124,89,0.16) 0%, rgba(74,124,89,0) 100%); }
+
+.tri-bar {
+  display: flex;
+  height: 5px;
+  width: 160px;
+  border-radius: 3px;
+  overflow: hidden;
+  margin: 30px 0 0;
+}
+.tri-bar span { flex: 1; }
+.tri-bar .b1 { background: var(--fluides); }
+.tri-bar .b2 { background: var(--solides); }
+.tri-bar .b3 { background: var(--data); }
+
 .hero .kicker {
   font-family: var(--font-mono);
   font-size: 0.76em;
@@ -353,21 +370,29 @@ main { flex: 1; }
 
 .project-num {
   font-family: var(--font-mono);
-  font-size: 0.82em;
-  color: var(--ink-faint);
+  font-size: 0.9em;
+  font-weight: 700;
   padding-top: 4px;
 }
+.num-fluides { color: var(--fluides); }
+.num-solides { color: var(--solides); }
+.num-data { color: var(--data); }
 
 .project-tag {
   display: inline-flex;
   align-items: center;
   gap: 7px;
-  font-size: 0.78em;
+  font-size: 0.76em;
+  font-weight: 700;
   letter-spacing: 0.4px;
   text-transform: uppercase;
-  color: var(--ink-soft);
-  margin-bottom: 12px;
+  padding: 6px 13px;
+  border-radius: 999px;
+  margin-bottom: 14px;
 }
+.tag-fluides { background: rgba(47,111,145,0.13); color: var(--fluides); }
+.tag-solides { background: rgba(181,98,47,0.13); color: var(--solides); }
+.tag-data { background: rgba(74,124,89,0.13); color: var(--data); }
 
 .project h3 {
   font-family: var(--font-serif);
@@ -426,8 +451,11 @@ main { flex: 1; }
    CODES SOURCES
    -------------------------------------------------------------------------- */
 
-.code-domain { margin-bottom: 56px; }
+.code-domain { margin-bottom: 40px; padding: 28px 30px; border-radius: 8px; }
 .code-domain:last-child { margin-bottom: 0; }
+.code-domain.domain-fluides { background: rgba(47,111,145,0.05); }
+.code-domain.domain-solides { background: rgba(181,98,47,0.05); }
+.code-domain.domain-data { background: rgba(74,124,89,0.05); }
 
 .code-domain-head {
   display: flex;
@@ -445,6 +473,10 @@ main { flex: 1; }
   margin: 0;
   color: var(--ink);
 }
+
+.head-fluides h3 { color: var(--fluides); }
+.head-solides h3 { color: var(--solides); }
+.head-data h3 { color: var(--data); }
 
 .code-rows { border-top: 1px solid var(--line); }
 
