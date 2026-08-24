@@ -1,88 +1,107 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Accueil – Ib, Ingénieur Simulation & Data Analyst</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Projets Fluides (CFD) — Ibrahim Cissé</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,450;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
- <h1>CISSE Ibrahim </h1>
- <h1> Ingénieur en Simulation Numérique - Data Analyst & IA </h1>
- <p>
-   Spécialiste en modélisation et simulation numérique en mécanique des fluides/ structures et thermique – en Analyse de Données, je combine la rigueur de la physique avec la puissance de la Data Science pour transformer des résultats complexes en décisions stratégiques.
- </p>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand">Ibrahim Cissé</a>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav">
+      <a href="index.html">Accueil</a>
+      <a href="projets-fluides.html" class="active">Fluides — CFD</a>
+      <a href="projets-solides.html">Solides & Thermique</a>
+      <a href="projets-data.html">Data & IA</a>
+      <a href="codes.html">Codes sources</a>
+      <a href="publications.html">Publications</a>
+    </nav>
+  </div>
 </header>
 
-<nav class="navbar">
-  <a href="index.html" class="nav-item">🏠 Accueil</a>
-  
-  <div class="dropdown">
-    <button class="dropbtn">⚙️ Projets ▼</button>
-    <div class="dropdown-content">
-      <a href="projets-fluides.html">🌊 Fluides (CFD)</a>
-      <a href="projets-solides.html">🏗️ Solides (CSM) & Thermique</a>
-      <a href="projets-data.html">📊 Data & IA</a>
+<main>
+
+  <section class="hero" style="padding-bottom:40px;">
+    <span class="kicker"><i class="dot dot-fluides" style="display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:8px;"></i>Mécanique des fluides</span>
+    <h1>Projets <span class="light">CFD</span></h1>
+    <p class="lede">Simulations d'écoulements, d'instabilités et de dispersion, résolues par volumes finis (OpenFOAM) et par méthode de Boltzmann sur réseau (LBM).</p>
+  </section>
+
+  <section class="section" style="border-top:none;">
+    <div class="project-list">
+
+      <article class="project">
+        <span class="project-num">01</span>
+        <div>
+          <span class="project-tag"><i class="dot dot-fluides" style="display:inline-block;width:7px;height:7px;border-radius:50%;"></i>CFD</span>
+          <h3>Simulation de l'écoulement à l'arrière d'un cylindre</h3>
+          <div class="gallery">
+            <img src="U_cyl.PNG" alt="Champ de vitesse derrière le cylindre">
+            <img src="Vort_cyl.PNG" alt="Champ de vorticité derrière le cylindre">
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <span class="project-num">02</span>
+        <div>
+          <span class="project-tag"><i class="dot dot-fluides" style="display:inline-block;width:7px;height:7px;border-radius:50%;"></i>CFD</span>
+          <h3>Simulation de l'instabilité de Kelvin-Helmholtz</h3>
+          <div class="gallery">
+            <img src="kelvin_flow.png" alt="Champ de vitesse — instabilité de Kelvin-Helmholtz">
+            <img src="kelvin_vorti.gif" alt="Champ de vorticité — instabilité de Kelvin-Helmholtz">
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <span class="project-num">03</span>
+        <div>
+          <span class="project-tag"><i class="dot dot-fluides" style="display:inline-block;width:7px;height:7px;border-radius:50%;"></i>LBM</span>
+          <h3>Écoulement entre deux plaques planes par LBM</h3>
+          <div class="gallery">
+            <img src="Pois_U.png" alt="Profil de vitesse — écoulement de Poiseuille">
+            <img src="Pois_Comp.png" alt="Comparaison analytique vs LBM">
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <span class="project-num">04</span>
+        <div>
+          <span class="project-tag"><i class="dot dot-fluides" style="display:inline-block;width:7px;height:7px;border-radius:50%;"></i>CFD</span>
+          <h3>Débits de doses de rayonnement sous atmosphère stable et instable</h3>
+          <div class="gallery">
+            <img src="debit_stable.png" alt="Débit de dose — atmosphère stable">
+            <img src="debit_instable.png" alt="Débit de dose — atmosphère instable">
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span>Ibrahim Cissé — Ingénieur Simulation & Data</span>
+    <div class="footer-contact">
+      <a class="email-link" href="mailto:ibrahim.cisse@ensam.eu">ibrahim.cisse@ensam.eu</a>
+      <span>📱 +33 7 65 62 16 11</span>
     </div>
   </div>
+</footer>
 
-  <a href="codes.html" class="nav-item">📂 Codes Sources</a>
-  <a href="publications.html" class="nav-item">📄 Publications</a>
-</nav>
-	<div class="project">
-	  <h3>Simulation de l'écoulement à l'arrière d'un cylindre</h3>
-	  <div class="gallery">
-		<img src="U_cyl.PNG" alt="air_quality">
-		<img src="Vort_cyl.PNG" alt="air_quality">
-	  </div>
-	</div>
-
-	<div class="project">
-	  <h3>Simulation de l'instabilité de Kelvin-Helmholtz</h3>
-	  <div class="gallery">
-		<img src="kelvin_flow.png" alt="champ de vitesse">
-		<img src="kelvin_vorti.gif" alt="champ de vorticité">
-	  </div>
-	</div>
-
-	<div class="project">
-	  <h3>Ecoulement entre deux plaques planes par LBM</h3>
-	  <div class="gallery"> 
-		<img src="Pois_U.png" alt="Profil de vitesse"> 
-		<img src="Pois_Comp.png" alt="Analytique vs LBM">
-	  </div>
-	</div>
-
-	<div class="project">
-	  <h3>Débits de doses de rayonnement sous atmosphère stable et instable</h3>
-	  <div class="gallery">
-		<img src="debit_stable.png" alt="Débit de dose stable">
-		<img src="debit_instable.png" alt="Débit de dose instable">
-	  </div>
-	</div>
-
-  </div>
-
-  <footer>
-    <p>📧 <a class="email-link" href="mailto:ibrahim.cisse@ensam.eu">ibrahim.cisse@ensam.eu</a>  
-       📱 +33 7 65 62 16 11 
-    </p>
-  </footer>
+<script src="script.js" defer></script>
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-

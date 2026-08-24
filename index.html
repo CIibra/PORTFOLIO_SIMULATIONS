@@ -1,93 +1,107 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Accueil – Ib, Ingénieur Simulation & Data Analyst</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Ibrahim Cissé — Ingénieur Simulation Numérique & Data Analyst</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portfolio d'Ibrahim Cissé, ingénieur en simulation numérique (CFD, CSM, thermique) et data analyst spécialisé en IA & automatisations.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,450;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
- <h1>CISSE Ibrahim </h1>
- <h1> Ingénieur en Simulation Numérique - Data Analyst & IA </h1>
- <p>
-   Spécialiste en modélisation et simulation numérique en mécanique des fluides/ structures et thermique – en Analyse de Données, je combine la rigueur de la physique avec la puissance de la Data Science pour transformer des résultats complexes en décisions stratégiques.
- </p>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand">Ibrahim Cissé</a>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav">
+      <a href="index.html" class="active">Accueil</a>
+      <a href="projets-fluides.html">Fluides — CFD</a>
+      <a href="projets-solides.html">Solides & Thermique</a>
+      <a href="projets-data.html">Data & IA</a>
+      <a href="codes.html">Codes sources</a>
+      <a href="publications.html">Publications</a>
+    </nav>
+  </div>
 </header>
 
-<nav class="navbar">
-  <a href="index.html" class="nav-item">🏠 Accueil</a>
-  
-  <div class="dropdown">
-    <button class="dropbtn">⚙️ Projets ▼</button>
-    <div class="dropdown-content">
-      <a href="projets-fluides.html">🌊 Fluides (CFD)</a>
-      <a href="projets-solides.html">🏗️ Solides (CSM) & Thermique</a>
-      <a href="projets-data.html">📊 Data & IA</a>
+<main>
+
+  <section class="hero">
+    <span class="kicker">Ingénieur Simulation Numérique — Data Analyst & IA</span>
+    <h1>La rigueur de la physique, <span class="light">la puissance de la donnée.</span></h1>
+    <p class="lede">Spécialiste en modélisation et simulation numérique en mécanique des fluides, des structures et thermique — et en analyse de données, je combine la rigueur de la physique avec la puissance de la Data Science pour transformer des résultats complexes en décisions stratégiques.</p>
+    <div class="hero-tags">
+      <span><i class="dot dot-fluides"></i>Mécanique des fluides (CFD)</span>
+      <span><i class="dot dot-solides"></i>Structures & thermique (CSM)</span>
+      <span><i class="dot dot-data"></i>Data & Intelligence Artificielle</span>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <span class="kicker">Compétences hybrides</span>
+      <h2>Deux disciplines, une même méthode</h2>
+    </div>
+    <div class="skill-rows">
+      <div class="skill-row">
+        <h3>Simulation numérique (CFD & CSM)</h3>
+        <p>ANSYS (Fluent, Mechanical), Abaqus, Code Saturne, Star CCM+, OpenFOAM.</p>
+      </div>
+      <div class="skill-row">
+        <h3>Data Science & statistiques</h3>
+        <p>Machine Learning (Scikit-learn), analyse exploratoire (Pandas) et modèles réduits.</p>
+      </div>
+      <div class="skill-row">
+        <h3>Programmation</h3>
+        <p>Python, Matlab, Fortran, C/C++, SQL et automatisation de workflows.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <span class="kicker">Livrables</span>
+      <h2>Une double approche pour une vision complète de vos systèmes</h2>
+    </div>
+    <div class="deliv-grid">
+      <div class="deliv-col">
+        <div class="deliv-kicker"><i class="dot dot-fluides"></i><i class="dot dot-solides"></i> Simulation (CFD / CSM)</div>
+        <ul>
+          <li><strong>Modèles numériques validés</strong><span>Paramétrage complet de solveurs et maillages optimisés.</span></li>
+          <li><strong>Études de dimensionnement</strong><span>Rapports d'analyse mécanique, thermique et fluidique.</span></li>
+          <li><strong>Développement spécifique</strong><span>Création d'UDF et de sous-routines personnalisées.</span></li>
+        </ul>
+      </div>
+      <div class="rule"></div>
+      <div class="deliv-col">
+        <div class="deliv-kicker"><i class="dot dot-data"></i> Data & automatisation</div>
+        <ul>
+          <li><strong>Modèles réduits (ROM)</strong><span>Accélération des prédictions via le Machine Learning.</span></li>
+          <li><strong>Automatisation</strong><span>Pipelines Python pour l'enchaînement maillage — calcul — post-traitement.</span></li>
+          <li><strong>Dashboards</strong><span>Visualisation interactive des données de simulation massives.</span></li>
+          <li><strong>Recommandations stratégiques</strong><span>Conclusions basées sur l'analyse, orientant les actions immédiates.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span>Ibrahim Cissé — Ingénieur Simulation & Data</span>
+    <div class="footer-contact">
+      <a class="email-link" href="mailto:ibrahim.cisse@ensam.eu">ibrahim.cisse@ensam.eu</a>
+      <span>📱 +33 7 65 62 16 11</span>
     </div>
   </div>
-
-  <a href="codes.html" class="nav-item">📂 Codes Sources</a>
-  <a href="publications.html" class="nav-item">📄 Publications</a>
-</nav>
-
-<div class="section">
-   <h2>🏠 Bienvenue</h2>
-   <p>
-     Mon expertise se situe à l'intersection de la <strong>Mécanique Numérique</strong> et de la <strong>Data Science</strong>. 
-     Je traduis des problématiques physiques complexes en modèles numériques prédictifs tout en exploitant les données massives pour optimiser la performance industrielle.
-   </p>
-</div>
-
-<div class="section">
- <h2>🛠️ Compétences Hybrides</h2>
- <ul>
-  <li><strong>Simulation Numérique (CFD & CSM)</strong> :ANSYS (Fluent, Mechanical), Abaqus, Code Saturne, Star CMM+, OpenFOAM.</li>
-  <li><strong>Data Science & Statistiques</strong> : Machine Learning (Scikit-learn), Analyse exploratoire (Pandas) et modèles réduits.</li>
-  <li><strong>Programmation</strong> : Python, Matlab, Fortran, C/C++, SQL et automatisation de workflows.</li>
- </ul>
-</div>
-
-<div class="section">
- <h2>🚀 Livrables & Réalisations possibles</h2>
- <p>Une double approche pour une vision complète de vos systèmes :</p>
- 
- <div class="grid-container" style="display: flex; flex-wrap: wrap; gap: 20px;">
-   
-   <div style="flex: 1; min-width: 300px; background: #f9f9f9; padding: 15px; border-radius: 8px;">
-     <h3>🔹 Simulation (CFD/CSM)</h3>
-     <ul>
-      <li><strong>Modèles Numériques Validés :</strong> Paramétrage complet de solveurs et maillages optimisés.</li>
-      <li><strong>Études de Dimensionnement :</strong> Rapports d'analyse mécanique, thermique et fluidique.</li>
-      <li><strong>Développement Spécifique :</strong> Création d'UDF et de sous-routines personnalisées.</li>
-     </ul>
-   </div>
-
-   <div style="flex: 1; min-width: 300px; background: #f9f9f9; padding: 15px; border-radius: 8px;">
-     <h3>🔹 Data & Automatisation</h3>
-     <ul>
-      <li><strong>Modèles Réduits (ROM) :</strong> Accélération des prédictions via le Machine Learning.</li>
-      <li><strong>Automatisation :</strong> Pipelines Python pour l'enchaînement Maillage-Calcul-Post-traitement.</li>
-      <li><strong>Dashboards :</strong> Visualisation interactive des données de simulation massives.</li>
-      <li><strong> Recommandations stratégiques </strong> : Conclusions basées sur l'analyse, orientant les actions immédiates.</li>
-     </ul>
-   </div>
-
- </div>
-</div>
-
-<footer>
- <p>📧 <a class="email-link" href="mailto:ibrahim.cisse@ensam.eu">ibrahim.cisse@ensam.eu</a> 📱 +33 7 65 62 16 11 </p>
 </footer>
 
+<script src="script.js" defer></script>
 </body>
 </html>
-
-
-
-
-
-
-
-

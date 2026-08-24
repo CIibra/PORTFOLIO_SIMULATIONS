@@ -1,112 +1,95 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Codes Sources – Ib, Ingénieur Simulation & Data</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Publications — Ibrahim Cissé</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,450;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
-<header>
-  <h1>CISSE Ibrahim</h1>
-  <h1>Ingénieur en Simulation Numérique - Data Analyst & IA</h1>
-  <p>Scripts Python et outils d'automatisation pour la simulation multi-physique et le traitement de données.</p>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand">Ibrahim Cissé</a>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav">
+      <a href="index.html">Accueil</a>
+      <a href="projets-fluides.html">Fluides — CFD</a>
+      <a href="projets-solides.html">Solides & Thermique</a>
+      <a href="projets-data.html">Data & IA</a>
+      <a href="codes.html">Codes sources</a>
+      <a href="publications.html" class="active">Publications</a>
+    </nav>
+  </div>
 </header>
 
-<nav class="navbar">
-  <a href="index.html" class="nav-item">🏠 Accueil</a>
-  <div class="dropdown">
-    <button class="dropbtn">⚙️ Projets ▼</button>
-    <div class="dropdown-content">
-      <a href="projets-fluides.html">🌊 Fluides (CFD)</a>
-      <a href="projets-solides.html">🏗️ Solides (CSM) & Thermique</a>
-      <a href="projets-data.html">📊 Data & IA</a>
-    </div>
-  </div>
-  <a href="codes.html" class="nav-item">📂 Codes Sources</a>
-  <a href="publications.html" class="nav-item">📄 Publications</a>
-</nav>
+<main>
 
-  <div class="pub-container">
-  <h2 class="section-title">📄 Articles & Publications </h2>
-  
-  <div class="pub-card">
-    <div class="pub-date">2023</div>
-    <div class="pub-content">
-      <h3>Fondements de la mécanique des fluides</h3>
-      <p class="pub-authors"><strong>CISSE Ibrahim</strong> </p> 
-      <div class="pub-links">
-        <a href="Fondements_mecanique_fluides.pdf" target="_blank">👁️ Lire l'article</a> 
-      </div>
-    </div>
-  </div>
+  <section class="hero" style="padding-bottom:40px;">
+    <span class="kicker">Écrits techniques</span>
+    <h1>Articles & <span class="light">publications</span></h1>
+    <p class="lede">Notes de cours, rapports de simulation et notebooks partagés autour de la mécanique numérique et de la data science.</p>
+  </section>
 
-  <div class="pub-card">
-    <div class="pub-date">2025</div>
-    <div class="pub-content">
-      <h3>La turbulence : aspects généraux</h3>
-      <p class="pub-authors"><strong>CISSE Ibrahim</strong> </p> 
-      <div class="pub-links">
-        <a href="La_turbulence.pdf" target="_blank">👁️ Lire l'article</a> 
-      </div>
-    </div>
-  </div>
-    
-  <div class="pub-card">
-    <div class="pub-date">2025</div>
-    <div class="pub-content">
-      <h3>Modélisation de la turbulence : Approche RANS</h3>
-      <p class="pub-authors"><strong>CISSE Ibrahim</strong> </p> 
-      <div class="pub-links">
-        <a href="Le_RANS.pdf" target="_blank">👁️ Lire l'article</a> 
-      </div>
-    </div>
-  </div>
+  <section class="section" style="border-top:none;">
+    <div class="pub-rows">
 
-  <div class="pub-card">
-    <div class="pub-date">2025</div>
-    <div class="pub-content">
-      <h3>Les transferts thermiques</h3>
-      <p class="pub-authors"><strong>CISSE Ibrahim</strong> </p> 
-      <div class="pub-links">
-        <a href="thermique.pdf" target="_blank">👁️ Lire l'article</a> 
+      <div class="pub-row">
+        <span class="pub-year">2023</span>
+        <h3>Fondements de la mécanique des fluides</h3>
+        <a class="pub-link" href="Fondements_mecanique_fluides.pdf" target="_blank">Lire l'article →</a>
       </div>
+
+      <div class="pub-row">
+        <span class="pub-year">2025</span>
+        <h3>La turbulence : aspects généraux</h3>
+        <a class="pub-link" href="La_turbulence.pdf" target="_blank">Lire l'article →</a>
+      </div>
+
+      <div class="pub-row">
+        <span class="pub-year">2025</span>
+        <h3>Modélisation de la turbulence : approche RANS</h3>
+        <a class="pub-link" href="Le_RANS.pdf" target="_blank">Lire l'article →</a>
+      </div>
+
+      <div class="pub-row">
+        <span class="pub-year">2025</span>
+        <h3>Les transferts thermiques</h3>
+        <a class="pub-link" href="thermique.pdf" target="_blank">Lire l'article →</a>
+      </div>
+
+      <div class="pub-row">
+        <span class="pub-year">2025</span>
+        <h3>Rapport de simulation de débits de doses de rayonnement gamma par CFD</h3>
+        <a class="pub-link" href="simulation_ddray_gam_by_cfd.pdf" target="_blank">Lire l'article →</a>
+      </div>
+
+      <div class="pub-row">
+        <span class="pub-year">2025</span>
+        <h3>Clustering climatique des pays (1960–2013)</h3>
+        <a class="pub-link" href="Clustering_climatique.ipynb" target="_blank">Voir le notebook →</a>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span>Ibrahim Cissé — Ingénieur Simulation & Data</span>
+    <div class="footer-contact">
+      <a class="email-link" href="mailto:ibrahim.cisse@ensam.eu">ibrahim.cisse@ensam.eu</a>
+      <span>📱 +33 7 65 62 16 11</span>
     </div>
   </div>
-
-  <div class="pub-card">
-    <div class="pub-date">2025</div>
-    <div class="pub-content">
-      <h3>Rapport de simulation de débits de doses de rayonnement gamma par CFD </h3>
-      <p class="pub-authors"><strong>CISSE Ibrahim</strong> </p> 
-      <div class="pub-links">
-        <a href="simulation_ddray_gam_by_cfd.pdf" target="_blank">👁️ Lire l'article</a> 
-      </div>
-    </div>
-  </div>
-
-  <div class="pub-card">
-    <div class="pub-date">2025</div>
-    <div class="pub-content">
-      <h3>Clustering climatique des pays (1960–2013) </h3>
-      <p class="pub-authors"><strong>CISSE Ibrahim</strong> </p> 
-      <div class="pub-links">
-        <a href="Clustering_climatique.ipynb" target="_blank">👁️ Voir le notebook</a> 
-      </div>
-    </div>
-  </div>
-    
-  </div>
-
-<footer>
-  <p>📧 <a class="email-link" href="mailto:ibrahim.cisse@ensam.eu">ibrahim.cisse@ensam.eu</a> | 📱 +33 7 65 62 16 11</p>
 </footer>
 
+<script src="script.js" defer></script>
 </body>
 </html>
-
-
-
-
-

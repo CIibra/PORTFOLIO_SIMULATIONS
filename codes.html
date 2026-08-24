@@ -1,132 +1,131 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Codes Sources – Ib, Ingénieur Simulation & Data</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Codes Sources — Ibrahim Cissé</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,450;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <h1>CISSE Ibrahim</h1>
-  <h1>Ingénieur en Simulation Numérique - Data Analyst & IA</h1>
-  <p>Scripts Python et outils d'automatisation pour la simulation multi-physique et le traitement de données.</p>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand">Ibrahim Cissé</a>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav">
+      <a href="index.html">Accueil</a>
+      <a href="projets-fluides.html">Fluides — CFD</a>
+      <a href="projets-solides.html">Solides & Thermique</a>
+      <a href="projets-data.html">Data & IA</a>
+      <a href="codes.html" class="active">Codes sources</a>
+      <a href="publications.html">Publications</a>
+    </nav>
+  </div>
 </header>
 
-<nav class="navbar">
-  <a href="index.html" class="nav-item">🏠 Accueil</a>
-  <div class="dropdown">
-    <button class="dropbtn">⚙️ Projets ▼</button>
-    <div class="dropdown-content">
-      <a href="projets-fluides.html">🌊 Fluides (CFD)</a>
-      <a href="projets-solides.html">🏗️ Solides (CSM) & Thermique</a>
-      <a href="projets-data.html">📊 Data & IA</a>
+<main>
+
+  <section class="hero" style="padding-bottom:40px;">
+    <span class="kicker">Ressources techniques</span>
+    <h1>Codes <span class="light">sources</span></h1>
+    <p class="lede">Scripts Python et outils d'automatisation pour la simulation multi-physique et le traitement de données.</p>
+  </section>
+
+  <section class="section" style="border-top:none;">
+
+    <div class="code-domain">
+      <div class="code-domain-head"><i class="dot dot-fluides"></i><h3>Mécanique des fluides & CFD</h3></div>
+      <div class="code-rows">
+        <div class="code-row">
+          <div><h4>LBM_Poiseuille.py</h4><p>Simulation D2Q9 (Lattice Boltzmann Method) de l'écoulement de Poiseuille entre plaques planes.</p></div>
+          <div class="code-links"><a href="LBM_Poiseuille.py" download class="code-download">Télécharger →</a></div>
+        </div>
+        <div class="code-row">
+          <div><h4>kelvin.py</h4><p>Modélisation de l'instabilité de Kelvin-Helmholtz pour l'étude des cisaillements de couches fluides.</p></div>
+          <div class="code-links"><a href="kelvin.py" download class="code-download">Télécharger →</a></div>
+        </div>
+        <div class="code-row">
+          <div><h4>mesh_convergence.py</h4><p>Automatisation d'études de convergence de maillage pour solveurs OpenFOAM (icoFoam, simpleFoam).</p></div>
+          <div class="code-links"><a href="mesh_convergence.py" download class="code-download">Télécharger →</a></div>
+        </div>
+        <div class="code-row">
+          <div><h4>openfoam_param.py</h4><p>Pipeline Python pour le lancement de simulations paramétrées (U, P) et gestion du HPC.</p></div>
+          <div class="code-links"><a href="openfoam_param.py" download class="code-download">Télécharger →</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="code-domain">
+      <div class="code-domain-head"><i class="dot dot-solides"></i><h3>Structures & thermique</h3></div>
+      <div class="code-rows">
+        <div class="code-row">
+          <div><h4>Traction_barre_1D/2D.py</h4><p>Résolution par la méthode des éléments finis (FEM) de problèmes de traction élastique.</p></div>
+          <div class="code-links">
+            <a href="Traction_barre_1D.py" download class="code-download">1D →</a>
+            <a href="Traction_barre_2D.py" download class="code-download">2D →</a>
+          </div>
+        </div>
+        <div class="code-row">
+          <div><h4>thermique_refroi.py</h4><p>Simulation instationnaire du refroidissement d'une plaque par conduction et convection.</p></div>
+          <div class="code-links"><a href="thermique_refroi.py" download class="code-download">Télécharger →</a></div>
+        </div>
+        <div class="code-row">
+          <div><h4>thermique_multi.py</h4><p>Calcul analytique/numérique du transfert thermique stationnaire dans un mur multicouche.</p></div>
+          <div class="code-links"><a href="thermique_multi.py" download class="code-download">Télécharger →</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="code-domain">
+      <div class="code-domain-head"><i class="dot dot-data"></i><h3>Data Science & automatisation</h3></div>
+      <div class="code-rows">
+        <div class="code-row">
+          <div><h4>scraping.py</h4><p>Scraping de données de séisme.</p></div>
+          <div class="code-links"><a href="scraping.py" download class="code-download">Télécharger →</a></div>
+        </div>
+        <div class="code-row">
+          <div><h4>outlier.py</h4><p>Méthodologie de détection d'outlier.</p></div>
+          <div class="code-links"><a href="choix_seuil_outlier.py.py" download class="code-download">Télécharger →</a></div>
+        </div>
+        <div class="code-row">
+          <div><h4>preparation_donnees.py</h4><p>Nettoyage et structuration de données.</p></div>
+          <div class="code-links"><a href="preparation_donnees.py" download class="code-download">Télécharger →</a></div>
+        </div>
+        <div class="code-row">
+          <div><h4>Dashboard.py</h4><p>Dashboard interactif à partir d'un CSV ou d'un fichier Excel.</p></div>
+          <div class="code-links"><a href="Dashboard.py" download class="code-download">Télécharger →</a></div>
+        </div>
+        <div class="code-row">
+          <div><h4>Analyse de ventes</h4><p>Scripts d'analyse de données de ventes complet.</p></div>
+          <div class="code-links">
+            <a href="analyse_ventes.py" download class="code-download">Statistiques globales →</a>
+            <a href="stat_temporelles.py" download class="code-download">Statistiques temporelles →</a>
+            <a href="benchmarck.py" download class="code-download">Benchmark →</a>
+            <a href="insights.py" download class="code-download">Insights →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span>Ibrahim Cissé — Ingénieur Simulation & Data</span>
+    <div class="footer-contact">
+      <a class="email-link" href="mailto:ibrahim.cisse@ensam.eu">ibrahim.cisse@ensam.eu</a>
+      <span>📱 +33 7 65 62 16 11</span>
     </div>
   </div>
-  <a href="codes.html" class="nav-item">📂 Codes Sources</a>
-  <a href="publications.html" class="nav-item">📄 Publications</a>
-</nav>
-
-<div class="main-container">
-
-  <section class="code-section fluides">
-    <h2 class="section-title">🌊 Mécanique des Fluides & CFD</h2>
-    <div class="code-grid">
-      <div class="code-card">
-        <h4>LBM_Poiseuille.py</h4>
-        <p>Simulation D2Q9 (Lattice Boltzmann Method) de l'écoulement de Poiseuille entre plaques planes.</p>
-        <a href="LBM_Poiseuille.py" download class="download-btn">⬇️ Télécharger</a>
-      </div>
-      <div class="code-card">
-        <h4>kelvin.py</h4>
-        <p>Modélisation de l'instabilité de Kelvin-Helmholtz pour l'étude des cisaillements de couches fluides.</p>
-        <a href="kelvin.py" download class="download-btn">⬇️ Télécharger</a>
-      </div>
-      <div class="code-card">
-        <h4>mesh_convergence.py</h4>
-        <p>Automatisation d'études de convergence de maillage pour solveurs OpenFOAM (icoFoam, simpleFoam).</p>
-        <a href="mesh_convergence.py" download class="download-btn">⬇️ Télécharger</a>
-      </div>
-      
-      <div class="code-card">
-        <h4>openfoam_param.py</h4>
-        <p>Pipeline Python pour le lancement de simulations paramétrées (U, P) et gestion du HPC.</p>
-        <a href="openfoam_param.py" download class="download-btn">⬇️ Télécharger</a>
-      </div>
-  </section>
-
-  <section class="code-section solides">
-    <h2 class="section-title">🏗️ Structures & Thermique</h2>
-    <div class="code-grid">
-      <div class="code-card">
-        <h4>Traction_barre_1D/2D.py</h4>
-        <p>Résolution par la méthode des éléments finis (FEM) de problèmes de traction élastique.</p>
-        <div class="btn-group">
-          <a href="Traction_barre_1D.py" download class="download-btn mini">1D</a>
-          <a href="Traction_barre_2D.py" download class="download-btn mini">2D</a>
-        </div>
-      </div>
-      <div class="code-card">
-        <h4>thermique_refroi.py</h4>
-        <p>Simulation instationnaire du refroidissement d'une plaque par conduction et convection.</p>
-        <a href="thermique_refroi.py" download class="download-btn">⬇️ Télécharger</a>
-      </div>
-      <div class="code-card">
-        <h4>thermique_multi.py</h4>
-        <p>Calcul analytique/numérique du transfert thermique stationnaire dans un mur multicouche.</p>
-        <a href="thermique_multi.py" download class="download-btn">⬇️ Télécharger</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="code-section data">
-    <h2 class="section-title">📊 Data Science & Automatisation</h2>
-     <div class="code-card">
-        <h4>.scraping.py</h4>
-        <p>Scraping de données de séisme</p>
-        <a href="scraping.py" download class="download-btn">⬇️ Télécharger</a>
-    </div>
-
-     <div class="code-card">
-        <h4>outlier.py</h4>
-        <p>Méthodologie de détection d'outlier</p>
-        <a href="choix_seuil_outlier.py.py" download class="download-btn">⬇️ Télécharger</a>
-    </div>
-
-     <div class="code-card">
-        <h4>preparation_donnees.py</h4>
-        <p>Nettoyage et structuration de données.</p>
-        <a href="preparation_donnees.py" download class="download-btn">⬇️ Télécharger</a>
-      </div>
-    <div class="code-card">
-        <h4>Dashboard.py</h4>
-        <p>Dashboard interactif à partir d'un CSV ou d'un fichier excel.</p>
-        <a href="Dashboard.py" download class="download-btn">⬇️ Télécharger</a>
-      </div>
-      
-      <div class="code-card">
-        <h4>Analyse de ventes</h4>
-        <p>Scripts d'analyse de données de ventes complet</p>
-        <div class="btn-group">
-         <a href="analyse_ventes.py" download class="download-btn mini">statistiques globales</a> 
-         <a href="stat_temporelles.py" download class="download-btn mini">statistiques temporelles</a>
-         <a href="benchmarck.py" download class="download-btn mini">benchmarck</a>
-        <a href="insights.py" download class="download-btn mini">insights</a>
-        </div>
-      </div>
-
-      
-  </section>
-
-</div>
-
-<footer>
-  <p>📧 <a class="email-link" href="mailto:ibrahim.cisse@ensam.eu">ibrahim.cisse@ensam.eu</a> | 📱 +33 7 65 62 16 11</p>
 </footer>
 
+<script src="script.js" defer></script>
 </body>
 </html>
-
-
-

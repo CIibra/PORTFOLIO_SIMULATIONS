@@ -1,101 +1,124 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Accueil – Ib, Ingénieur Simulation & Data Analyst</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Projets Solides & Thermique — Ibrahim Cissé</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,450;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
- <h1>CISSE Ibrahim </h1>
- <h1> Ingénieur en Simulation Numérique - Data Analyst & IA </h1>
- <p>
-   Spécialiste en modélisation et simulation numérique en mécanique des fluides/ structures et thermique – en Analyse de Données, je combine la rigueur de la physique avec la puissance de la Data Science pour transformer des résultats complexes en décisions stratégiques.
- </p>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand">Ibrahim Cissé</a>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav">
+      <a href="index.html">Accueil</a>
+      <a href="projets-fluides.html">Fluides — CFD</a>
+      <a href="projets-solides.html" class="active">Solides & Thermique</a>
+      <a href="projets-data.html">Data & IA</a>
+      <a href="codes.html">Codes sources</a>
+      <a href="publications.html">Publications</a>
+    </nav>
+  </div>
 </header>
 
-<nav class="navbar">
-  <a href="index.html" class="nav-item">🏠 Accueil</a>
-  
-  <div class="dropdown">
-    <button class="dropbtn">⚙️ Projets ▼</button>
-    <div class="dropdown-content">
-      <a href="projets-fluides.html">🌊 Fluides (CFD)</a>
-      <a href="projets-solides.html">🏗️ Solides (CSM) & Thermique</a>
-      <a href="projets-data.html">📊 Data & IA</a>
+<main>
+
+  <section class="hero" style="padding-bottom:40px;">
+    <span class="kicker">Structures & thermique</span>
+    <h1>Projets <span class="light">CSM & Thermique</span></h1>
+    <p class="lede">Analyses par éléments finis en mécanique des structures (contraintes, déformations) et en thermique (conduction, convection).</p>
+  </section>
+
+  <section class="section" style="border-top:none;">
+    <div class="project-list">
+
+      <article class="project">
+        <span class="project-num">01</span>
+        <div>
+          <span class="project-tag"><i class="dot dot-solides" style="display:inline-block;width:7px;height:7px;border-radius:50%;"></i>CSM</span>
+          <h3>Étude du comportement mécanique d'un bras de suspension</h3>
+          <div class="gallery">
+            <img src="cle_1.png" alt="Contrainte de von Mises — bras de suspension">
+            <img src="cle_3.png" alt="Déformation — bras de suspension">
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <span class="project-num">02</span>
+        <div>
+          <span class="project-tag"><i class="dot dot-solides" style="display:inline-block;width:7px;height:7px;border-radius:50%;"></i>Thermique</span>
+          <h3>Refroidissement d'une plaque</h3>
+          <div class="gallery">
+            <img src="flux_haut.png" alt="Flux de chaleur — refroidissement d'une plaque">
+            <img src="temperature.png" alt="Température — refroidissement d'une plaque">
+          </div>
+          <div class="gallery">
+            <img src="Temp10.png" alt="Température à t = 10">
+            <img src="Temp60.png" alt="Température à t = 60">
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <span class="project-num">03</span>
+        <div>
+          <span class="project-tag"><i class="dot dot-solides" style="display:inline-block;width:7px;height:7px;border-radius:50%;"></i>CSM</span>
+          <h3>Traction d'une barre 1D</h3>
+          <div class="gallery">
+            <img src="contrainte.png" alt="Contrainte — traction d'une barre 1D">
+            <img src="deformation.png" alt="Déformation — traction d'une barre 1D">
+            <img src="deplacement.png" alt="Déplacement — traction d'une barre 1D">
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <span class="project-num">04</span>
+        <div>
+          <span class="project-tag"><i class="dot dot-solides" style="display:inline-block;width:7px;height:7px;border-radius:50%;"></i>CSM</span>
+          <h3>Torsion d'un cylindre en acier</h3>
+          <div class="gallery">
+            <img src="contrainte_cyl.png" alt="Contrainte — torsion d'un cylindre en acier">
+            <img src="deformation_cyl.png" alt="Déformation — torsion d'un cylindre en acier">
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <span class="project-num">05</span>
+        <div>
+          <span class="project-tag"><i class="dot dot-solides" style="display:inline-block;width:7px;height:7px;border-radius:50%;"></i>CSM</span>
+          <h3>Déformation d'une plaque trouée</h3>
+          <div class="gallery">
+            <img src="contrainte_plaque.png" alt="Contrainte — plaque trouée">
+            <img src="déformation_plaque.png" alt="Déformation — plaque trouée">
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span>Ibrahim Cissé — Ingénieur Simulation & Data</span>
+    <div class="footer-contact">
+      <a class="email-link" href="mailto:ibrahim.cisse@ensam.eu">ibrahim.cisse@ensam.eu</a>
+      <span>📱 +33 7 65 62 16 11</span>
     </div>
   </div>
+</footer>
 
-  <a href="codes.html" class="nav-item">📂 Codes Sources</a>
-  <a href="publications.html" class="nav-item">📄 Publications</a>
-</nav>
-	<div class="project">
-	  <h3>Etude du comportement mécanique d'un bras de suspension</h3>
-	  <div class="gallery">
-		<img src="cle_1.png" alt="von mises stress">
-		<img src="cle_3.png" alt="strain"> 
-	  </div> 
-	</div>
-
-	<div class="project">
-	  <h3>Refroidissement d'une plaque</h3>
-	  <div class="gallery">
-		<img src="flux_haut.png" alt="Flux de chaleur">
-		<img src="temperature.png" alt="Température">
-	  </div>
-	  <div class="gallery">
-		<img src="Temp10.png" alt="Temperature à 10">
-		<img src="Temp60.png" alt="Température à 60">
-	  </div>
-	</div>
-
-	<div class="project">
-	  <h3>Traction d'une barre 1D</h3>
-	  <div class="gallery">
-		<img src="contrainte.png" alt="Flux de chaleur">
-		<img src="deformation.png" alt="deformation"> 
-		<img src="deplacement.png" alt="deplacement">
-	  </div>
-	</div> 
-
-	<div class="project">
-	  <h3>Torsion d'un cylindre en acier</h3>
-	  <div class="gallery"> 
-		<img src="contrainte_cyl.png" alt="contrainte">
-		<img src="deformation_cyl.png" alt="deformation">  
-	  </div>
-	</div> 
-
-	<div class="project">
-	  <h3>Déformation d'une plaque trouée</h3>
-	  <div class="gallery"> 
-		<img src="contrainte_plaque.png" alt="contrainte">
-		<img src="déformation_plaque.png" alt="deformation">  
-	  </div>
-	</div> 
-
-  </div>
-
-  <footer>
-    <p>📧 <a class="email-link" href="mailto:ibrahim.cisse@ensam.eu">ibrahim.cisse@ensam.eu</a>  
-       📱 +33 7 65 62 16 11 
-    </p>
-  </footer>
+<script src="script.js" defer></script>
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-

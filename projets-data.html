@@ -1,118 +1,132 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Accueil – Ib, Ingénieur Simulation & Data Analyst</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Projets Data & IA — Ibrahim Cissé</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,450;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
- <h1>CISSE Ibrahim </h1>
- <h1> Ingénieur en Simulation Numérique - Data Analyst & IA </h1>
- <p>
-   Spécialiste en modélisation et simulation numérique en mécanique des fluides/ structures et thermique – en Analyse de Données, je combine la rigueur de la physique avec la puissance de la Data Science pour transformer des résultats complexes en décisions stratégiques.
- </p>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand">Ibrahim Cissé</a>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav">
+      <a href="index.html">Accueil</a>
+      <a href="projets-fluides.html">Fluides — CFD</a>
+      <a href="projets-solides.html">Solides & Thermique</a>
+      <a href="projets-data.html" class="active">Data & IA</a>
+      <a href="codes.html">Codes sources</a>
+      <a href="publications.html">Publications</a>
+    </nav>
+  </div>
 </header>
 
-<nav class="navbar">
-  <a href="index.html" class="nav-item">🏠 Accueil</a>
-  
-  <div class="dropdown">
-    <button class="dropbtn">⚙️ Projets ▼</button>
-    <div class="dropdown-content">
-      <a href="projets-fluides.html">🌊 Fluides (CFD)</a>
-      <a href="projets-solides.html">🏗️ Solides (CSM) & Thermique</a>
-      <a href="projets-data.html">📊 Data & IA</a>
+<main>
+
+  <section class="hero" style="padding-bottom:40px;">
+    <span class="kicker">Data & Intelligence Artificielle</span>
+    <h1>Projets <span class="light">Data & IA</span></h1>
+    <p class="lede">Machine Learning, dashboards et analyse de données appliqués à des problématiques industrielles, environnementales et médicales.</p>
+  </section>
+
+  <section class="section" style="border-top:none;">
+    <div class="project-list">
+
+      <article class="project">
+        <span class="project-num">01</span>
+        <div>
+          <span class="project-tag"><i class="dot dot-data" style="display:inline-block;width:7px;height:7px;border-radius:50%;"></i>Machine Learning</span>
+          <h3>Prédiction des propriétés mécaniques par Machine Learning</h3>
+          <a class="project-link" href="rapport_composite.html" target="_blank" rel="noopener noreferrer">Voir le projet complet →</a>
+          <div class="gallery">
+            <img src="prédiction.png" alt="Prédiction des propriétés mécaniques">
+            <img src="sensibilité.png" alt="Analyse de sensibilité">
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <span class="project-num">02</span>
+        <div>
+          <span class="project-tag"><i class="dot dot-data" style="display:inline-block;width:7px;height:7px;border-radius:50%;"></i>Machine Learning</span>
+          <h3>Simulation de la qualité de l'air par Machine Learning</h3>
+          <a class="project-link" href="https://bit.ly/3KsFWq3" target="_blank" rel="noopener noreferrer">Tester l'application →</a>
+          <div class="gallery">
+            <img src="Projet1_1.png" alt="Application qualité de l'air — vue 1">
+            <img src="Projet1_2.png" alt="Application qualité de l'air — vue 2">
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <span class="project-num">03</span>
+        <div>
+          <span class="project-tag"><i class="dot dot-data" style="display:inline-block;width:7px;height:7px;border-radius:50%;"></i>Data Visualisation</span>
+          <h3>Tableau de bord des flux voyageurs SNCF par Machine Learning</h3>
+          <a class="project-link" href="https://bit.ly/4mJutjo" target="_blank" rel="noopener noreferrer">Voir le projet complet →</a>
+          <div class="gallery">
+            <img src="Projet2_1.png" alt="Flux voyageurs SNCF — vue 1">
+            <img src="Projet2_2.png" alt="Flux voyageurs SNCF — vue 2">
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <span class="project-num">04</span>
+        <div>
+          <span class="project-tag"><i class="dot dot-data" style="display:inline-block;width:7px;height:7px;border-radius:50%;"></i>Machine Learning</span>
+          <h3>Analyse de données médicales par Machine Learning</h3>
+          <a class="project-link" href="ml_medical.html" target="_blank" rel="noopener noreferrer">Voir le projet complet →</a>
+          <div class="gallery">
+            <img src="medi_1.png" alt="Analyse médicale — vue 1">
+            <img src="medi_2.png" alt="Analyse médicale — vue 2">
+          </div>
+          <div class="gallery">
+            <img src="medi_3.png" alt="Analyse médicale — vue 3">
+            <img src="medi_4.png" alt="Analyse médicale — vue 4">
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <span class="project-num">05</span>
+        <div>
+          <span class="project-tag"><i class="dot dot-data" style="display:inline-block;width:7px;height:7px;border-radius:50%;"></i>Business Intelligence</span>
+          <h3>Analyse de performance commerciale et stratégie produit — Secteur numérique</h3>
+          <a class="project-link" href="projet_ventes_numeriques.html" target="_blank" rel="noopener noreferrer">Voir le projet complet →</a>
+          <div class="gallery">
+            <img src="ca_global.png" alt="Chiffre d'affaires global">
+            <img src="part_categorie.png" alt="Part par catégorie">
+          </div>
+          <div class="gallery">
+            <img src="heatmap_region_equipe.png" alt="Heatmap région / équipe">
+            <img src="evolution_ca_ma3.png" alt="Évolution du CA (moyenne mobile)">
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span>Ibrahim Cissé — Ingénieur Simulation & Data</span>
+    <div class="footer-contact">
+      <a class="email-link" href="mailto:ibrahim.cisse@ensam.eu">ibrahim.cisse@ensam.eu</a>
+      <span>📱 +33 7 65 62 16 11</span>
     </div>
   </div>
+</footer>
 
-  <a href="codes.html" class="nav-item">📂 Codes Sources</a>
-  <a href="publications.html" class="nav-item">📄 Publications</a>
-</nav>
-	<div class="project">
-	  <h3>Prédiction des Propriétés Mécaniques par Machine Learning.</h3>
-	   <a class="project-link" href="rapport_composite.html" target="_blank" rel="noopener noreferrer">
-          📄 Voir le projet complet</a>
-	  <p></p>
-	  <div class="gallery">
-	      <img src="prédiction.png" alt="Projet 0"> 
-	      <img src="sensibilité.png" alt="Projet 0"> 
-	  </div> 
-	</div>
-    <div class="project">
-	  <h3>Simulation de la qualité de l'air par Machine Learning</h3>
-	  <a class="project-link" href="https://bit.ly/3KsFWq3" target="_blank" rel="noopener noreferrer">
-          📄 Tester l'application</a>
-	  <p></p>
-	  <div class="gallery">
-		<img src="Projet1_1.png" alt="air_quality">
-		<img src="Projet1_2.png" alt="air_quality">
-	  </div>
-	</div>
-	<div class="project">
-	  <h3>Tableau de bord des flux voyageurs SNCF par Machine Learning</h3>
-	   <a class="project-link" href="https://bit.ly/4mJutjo" target="_blank" rel="noopener noreferrer">
-          📄 Voir le projet complet</a>
-	  <p></p>
-	  <div class="gallery">
-		<img src="Projet2_1.png" alt="sncf">
-		<img src="Projet2_2.png" alt="sncf">
-	  </div>
-	</div>
-
-	<div class="project">
-	  <h3>Analyse de données médicales par Machine Learning</h3>
-	   <a class="project-link" href="ml_medical.html" target="_blank" rel="noopener noreferrer">
-          📄 Voir le projet complet</a>
-	  <p></p>
-	  <div class="gallery">
-	      <img src="medi_1.png" alt="Projet 0">
-	      <img src="medi_2.png" alt="Projet 0"> 
-	  </div>
-	  <div class="gallery">
-	      <img src="medi_3.png" alt="Projet 0">
-	      <img src="medi_4.png" alt="Projet 0"> 
-	  </div>
-		
-	</div>
-	
-	<div class="project">
-	  <h3>Analyse de performance commerciale et stratégie produit – Secteur numérique.</h3>
-	   <a class="project-link" href="projet_ventes_numeriques.html" target="_blank" rel="noopener noreferrer">
-          📄 Voir le projet complet</a>
-	  <p></p>
-	  <div class="gallery">
-	      <img src="ca_global.png" alt="Projet 0">
-	      <img src="part_categorie.png" alt="Projet 0"> 
-	  </div>
-	  <div class="gallery">
-	      <img src="heatmap_region_equipe.png" alt="Projet 0">
-	      <img src="evolution_ca_ma3.png" alt="Projet 0"> 
-	  </div>
-	</div>
-	
-  </div>
-
-  <footer>
-    <p>📧 <a class="email-link" href="mailto:ibrahim.cisse@ensam.eu">ibrahim.cisse@ensam.eu</a>  
-       📱 +33 7 65 62 16 11 
-    </p>
-  </footer>
+<script src="script.js" defer></script>
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
