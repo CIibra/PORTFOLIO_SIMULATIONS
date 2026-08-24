@@ -7,9 +7,10 @@
   --ink: #15181e;
   --ink-soft: #5a6272;
   --ink-faint: #98a1ae;
-  --paper: #ffffff;
-  --paper-soft: #f7f6f3;
-  --line: #e7e5df;
+  --paper: #faf7f1;
+  --paper-alt: #f1ece1;
+  --card: #fffdf9;
+  --line: #e3ddcd;
 
   --accent: #b5622f;   /* accent général (liens, CTA) — terre cuite */
   --fluides: #2f6f91;  /* bleu — mécanique des fluides */
@@ -48,7 +49,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .site-header {
   position: sticky;
   top: 0;
-  background: rgba(255,255,255,0.92);
+  background: rgba(250, 247, 241, 0.92);
   backdrop-filter: blur(6px);
   border-bottom: 1px solid var(--line);
   z-index: 50;
@@ -87,7 +88,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   transition: color 0.2s ease, background 0.2s ease;
 }
 
-.site-nav a:hover { color: var(--ink); background: var(--paper-soft); }
+.site-nav a:hover { color: var(--ink); background: var(--paper-alt); }
 
 .site-nav a.active {
   color: var(--ink);
@@ -155,6 +156,18 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   max-width: 1040px;
   margin: 0 auto;
   padding: 100px 32px 70px;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 0;
+  right: 0;
+  height: 380px;
+  background: linear-gradient(180deg, var(--paper-alt) 0%, rgba(241,236,225,0) 100%);
+  z-index: -1;
 }
 
 .hero .kicker {
@@ -221,6 +234,13 @@ main { flex: 1; }
 }
 
 .section:first-child { border-top: none; }
+
+.section:nth-of-type(even) {
+  background: var(--paper-alt);
+  border-radius: 6px;
+  border-top: none;
+  margin: 24px auto;
+}
 
 .section-head { margin-bottom: 40px; }
 
@@ -390,11 +410,12 @@ main { flex: 1; }
   width: 100%;
   height: 320px;
   object-fit: contain;
-  background: var(--paper-soft);
+  background: var(--card);
   padding: 6px;
   box-sizing: border-box;
   border: 1px solid var(--line);
   border-radius: 3px;
+  box-shadow: 0 2px 8px rgba(21,24,30,0.04);
 }
 
 @media (max-width: 640px) {
